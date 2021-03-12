@@ -98,6 +98,24 @@
 	}
 	
 	function addGclid() {
+		var gclidParam = getParam('gclid');
+	var gclidFormFields = ['gclid_field', 'foobar']; // all possible gclid form field ids here
+	var gclidRecord = null;
+	var currGclidFormField;
+
+	var gclsrcParam = getParam('gclsrc');
+	var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+
+	gclidFormFields.forEach(function (field) {
+	if (document.getElementById(field)) {
+	currGclidFormField = document.getElementById(field);
+	}
+	});
+
+	if (gclidParam && isGclsrcValid) {
+	gclidRecord = getExpiryRecord(gclidParam);
+	localStorage.setItem('gclid', JSON.stringify(gclidRecord));
+	}
 	
 	var gclid = gclidRecord || JSON.parse(localStorage.getItem('gclid'));
 	var isGclidValid = gclid && new Date().getTime() < gclid.expiryDate;
