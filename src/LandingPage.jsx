@@ -121,9 +121,16 @@ function LandingPage(props) {
 									employee-related risk.
 								</p>
 								<p>At Quantum, we offer the best coverage available for your business. Get your free quote today and check out what would be the best fit for your business.</p>
-								<Button type='block ' size='large' className='btn-large text-white bg-blue'>
-									Start Your Free Qoute <ArrowRightOutlined />
-								</Button>
+								<Button
+													onClick={() => {
+														props.changeRoute();
+														history.push('/step1');
+													}}
+													type='block '
+													size='large'
+													className='btn-large text-blue'>
+													Free Commercial Quote <ArrowRightOutlined />
+												</Button>
 							</Col>
 							<Col xs={{ span: 24 }} lg={{ span: 12 }}>
 								<div className='service-main-image business'></div>
@@ -160,9 +167,16 @@ function LandingPage(props) {
 						</Row>
 						<Row className='text-center'>
 							<Col span={24}>
-								<Button type='block ' size='large' className='btn-large text-white bg-blue'>
-									Start Your Free Quote <ArrowRightOutlined />
-								</Button>
+								<Button
+													onClick={() => {
+														props.changeRoute();
+														history.push('/step1');
+													}}
+													type='block '
+													size='large'
+													className='btn-large text-blue'>
+													Free Commercial Quote <ArrowRightOutlined />
+												</Button>
 							</Col>
 						</Row>
 					</section>
@@ -178,8 +192,15 @@ function LandingPage(props) {
 										</p>
 										<Row className='mt-1 '>
 											<Col span={24}>
-												<Button type='block ' size='large' className='btn-large text-white bg-blue'>
-													Start Your Free Qoute <ArrowRightOutlined />
+												<Button
+													onClick={() => {
+														props.changeRoute();
+														history.push('/step1');
+													}}
+													type='block '
+													size='large'
+													className='btn-large text-blue'>
+													Free Commercial Quote <ArrowRightOutlined />
 												</Button>
 											</Col>
 										</Row>
@@ -223,9 +244,16 @@ function LandingPage(props) {
 								<p>Thankfully, Quantum has you covered when it comes to understanding car insurance.</p>
 								<Row className='mt-1 '>
 									<Col span={24}>
-										<Button type='block ' size='large' className='btn-large text-white bg-blue'>
-											Start Your Free Qoute <ArrowRightOutlined />
-										</Button>
+										<Button
+													onClick={() => {
+														props.changeRoute();
+														history.push('/step1');
+													}}
+													type='block '
+													size='large'
+													className='btn-large text-blue'>
+													Free Commercial Quote <ArrowRightOutlined />
+												</Button>
 									</Col>
 								</Row>
 							</Col>
@@ -293,9 +321,16 @@ function LandingPage(props) {
 						</Row>
 						<Row className='mt-1 text-center'>
 							<Col span={24}>
-								<Button type='block ' size='large' className='btn-large text-white bg-blue'>
-									Start Your Free Qoute <ArrowRightOutlined />
-								</Button>
+								<Button
+													onClick={() => {
+														props.changeRoute();
+														history.push('/step1');
+													}}
+													type='block '
+													size='large'
+													className='btn-large text-blue'>
+													Free Commercial Quote <ArrowRightOutlined />
+												</Button>
 							</Col>
 						</Row>
 					</section>
@@ -327,9 +362,16 @@ function LandingPage(props) {
 								<p>Matthew</p>
 								<Row className='mt-1'>
 									<Col span={24}>
-										<Button type='block ' size='large' className='btn-large text-white bg-blue'>
-											Start Your Free Qoute <ArrowRightOutlined />
-										</Button>
+										<Button
+													onClick={() => {
+														props.changeRoute();
+														history.push('/step1');
+													}}
+													type='block '
+													size='large'
+													className='btn-large text-blue'>
+													Free Commercial Quote <ArrowRightOutlined />
+												</Button>
 									</Col>
 								</Row>
 							</Col>
@@ -365,8 +407,15 @@ function LandingPage(props) {
 										</Row>
 										<Row className='mt-4'>
 											<Col span={24}>
-												<Button type='block ' size='large' className='btn-large text-white bg-blue'>
-													Start Your Free Qoute <ArrowRightOutlined />
+												<Button
+													onClick={() => {
+														props.changeRoute();
+														history.push('/step1');
+													}}
+													type='block '
+													size='large'
+													className='btn-large text-blue'>
+													Free Commercial Quote <ArrowRightOutlined />
 												</Button>
 											</Col>
 										</Row>
