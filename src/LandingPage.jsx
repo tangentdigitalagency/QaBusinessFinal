@@ -55,7 +55,7 @@ function LandingPage(props) {
 												<Button
 													onClick={() => {
 														props.changeRoute();
-														history.push('/calculate');
+														history.push('/step1');
 													}}
 													type='block '
 													size='large'
