@@ -25,7 +25,7 @@ import LandingPage from './LandingPage';
 class App extends Component {
 	state = {
 		route: '/',
-		routes: ['/calculate', '/step2', '/step3', '/step4', '/step5', '/step6', '/step7', '/step8', '/thank-you'],
+		routes: ['/step1', '/step2', '/step3', '/step4', '/step5', '/step6', '/step7', '/step8', '/thank-you'],
 		postData: {
 			//extra entries
 			lp_campaign_id: '603456261cc2a',
@@ -166,7 +166,7 @@ class App extends Component {
 						<div className='col'>
 							<Router>
 								<Switch>
-									<Route exact path='/calculate'>
+									<Route exact path='/step1'>
 										<S1FirstAndLastName
 											props={this.props}
 											first_name={this.state.postData.first_name}
