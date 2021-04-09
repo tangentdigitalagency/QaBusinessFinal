@@ -21,7 +21,7 @@ class S8BusinessRevenueAndNoOfEmployees extends Component {
     this.setState({
       loading: true 
     }, this.PostDataOfBusinessInsurance(this.props.postData));
-    this.props.history.push("/thank-you")
+    this.props.history.push("/thank-you-commercial")
   };
   PostDataOfBusinessInsurance = (postData) => {
     console.log(postData);
