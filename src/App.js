@@ -67,6 +67,7 @@ class App extends Component {
 			// s8 form fields
 			annual_revenue_over_next_12_months: '',
 			number_of_employees: '',
+			campaign: '',
 		},
 	};
 
@@ -92,24 +93,53 @@ class App extends Component {
 	};
 
 	componentDidMount() {
-		
-		var str = window.location.href
-    if (str.includes('utm_medium=facebook'))
-      this.setState({ lp_s1: 103 }, () => {
-        //console.log(this.state.Pub_ID)
-      })
-    if (str.includes('utm_medium=adwords'))
-      this.setState({ lp_s1: 101 }, () => {
-        //console.log(this.state.Pub_ID)
-      })
-	if (str.includes('utm_medium=bing'))
-	  this.setState({ lp_s1: 108 }, () => {
+	
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
 
-	  })
-	if (str.includes(''))
-	  this.setState({ lp_s1: 12 }, () => {
+		const utmCampaign = urlParams.get('{utm_campaign}');
+		this.setState({
+			postData: {
+				...this.state.postData,
+				campaign: utmCampaign
+			}
+			
+		})
 
-	  })
+		const utmMed = urlParams.get('utm_medium');
+
+		if (utmMed == 'adwords'){
+			this.setState({
+				postData: {
+					...this.state.postData,
+					lp_s1: '101'
+				},
+			});
+		}
+		if (utmMed == 'facebook'){
+			this.setState({
+				postData: {
+					...this.state.postData,
+					lp_s1: '103'
+				},
+			});
+		}
+		if (utmMed == 'bing'){
+			this.setState({
+				postData: {
+					...this.state.postData,
+					lp_s1: '108'
+				},
+			});
+		}
+		else{
+			this.setState({
+				postData: {
+					...this.state.postData,
+					lp_s1: '12'
+				},
+			});
+		}
 
 
 		if (this.state.first_name === '' || this.state.last_name === '') {
