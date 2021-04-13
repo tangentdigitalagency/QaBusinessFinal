@@ -194,18 +194,19 @@ class App extends Component {
 						/>
 						<ul className='nav nav-fill '>
 							<li className='nav-item'>
-								<Button
-									type='primary'
-									size='middle'
-									icon={
-										<PhoneOutlined
-											// @ts-ignore
-											rotate='90'
-										/>
-									}
-									href={'tel:+18552045980'}>
-										<a href="tel:+18552045980" >855-204-5980</a>
-								</Button>
+							<Button
+                  type="primary"
+                  size="large"
+                  icon={
+                    <PhoneOutlined
+                      rotate="90"
+                      style={{ verticalAlign: "initial" }}
+                    />
+                  }
+                  href="tel:(855) 204-5980"
+                >
+                  (855) 204-5980
+                </Button>
 							</li>
 						</ul>
 					</div>
