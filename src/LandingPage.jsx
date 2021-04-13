@@ -1,4 +1,5 @@
 import { Button, Card, Col, Collapse, Layout, Row } from 'antd';
+import { PhoneOutlined } from '@ant-design/icons';
 import logo from './Assets/img/logo.png';
 import farmers from './Assets/img/farmers.png';
 import progressive from './Assets/img/progressive.png';
@@ -35,7 +36,18 @@ function LandingPage(props) {
 							</a>
 						</Col>
 						<Col xs={{ span: 24 }} lg={{ span: 12 }} className='text-right'>
-							<strong>Call For Free Quote</strong>
+						<Button
+									type='primary'
+									size='middle'
+									icon={
+										<PhoneOutlined
+											// @ts-ignore
+											rotate='90'
+										/>
+									}
+									href={'tel:+18552045980'}>
+									855-204-5980
+								</Button>
 						</Col>
 					</Row>
 				</Header>

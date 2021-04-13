@@ -97,7 +97,7 @@ class App extends Component {
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
 
-		const utmCampaign = urlParams.get('{utm_campaign}');
+		const utmCampaign = urlParams.get('utm_campaign');
 		this.setState({
 			postData: {
 				...this.state.postData,
