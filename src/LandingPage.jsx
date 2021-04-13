@@ -46,7 +46,7 @@ function LandingPage(props) {
 										/>
 									}
 									href={'tel:+18552045980'}>
-									855-204-5980
+									<a href="tel:+18552045980" >855-204-5980</a>
 								</Button>
 						</Col>
 					</Row>
