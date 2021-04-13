@@ -45,7 +45,9 @@ class S1FirstAndLastName extends Component {
               onFinish={this.onFinish}
               initialValues={{
                 first_name: this.props.first_name,
-                last_name: this.props.last_name
+                last_name: this.props.last_name,
+                useragent: this.props.useragent
+                
               }}
               onFinishFailed={this.onFinishFailed}
             >
@@ -89,6 +91,18 @@ class S1FirstAndLastName extends Component {
                    
                   size="large"
                   placeholder="Last Name"
+                />
+              </Form.Item>
+
+              <Form.Item
+                name="useragent"
+                hidden = {true}
+                id="useragent"
+              >
+                <Input 
+                   
+                  size="large"
+                  placeholder="user agent"
                 />
               </Form.Item>
             

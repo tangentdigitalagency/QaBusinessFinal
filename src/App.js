@@ -33,6 +33,7 @@ class App extends Component {
 			lp_s1: '',
 			lp_s2: '13',
 			gclid: '',
+			useragent: navigator.userAgent,
 			TCPA_Consent: 'Yes',
 			TCPA_Language:
 				'By clicking Get My Quote I provide my electronic signature and express written consent to telemarketing calls, text messages, emails, and postal mail from this Web site, our marketing and re-marketing network, and up to eight insurance companies or their affiliates or representatives at the phone number (including wireless number), email address, and postal address provided by me. I consent to calls and text messages transmitting insurance quotes, or seeking related additional information from me, using an Automatic Telephone Dialing System or prerecorded or artificial voices. I consent that my signature is not a condition of purchasing any property, goods, or services and that I may revoke my consent at any time.',
@@ -214,6 +215,15 @@ class App extends Component {
 													postData: {
 														...this.state.postData,
 														last_name: v,
+													},
+												});
+											}}
+
+											setUserAgent={() => {
+												this.setState({
+													postData: {
+														...this.state.postData,
+														useragent: navigator.userAgent,
 													},
 												});
 											}}
