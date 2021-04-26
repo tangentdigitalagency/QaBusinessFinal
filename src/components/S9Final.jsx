@@ -20,8 +20,11 @@ class S9Final extends Component {
 			
 			
 			<div className="container pt-0 main-content-container">
-				<h1 className="center"> You Are On Your Way To Saving on Your <b>Business</b> Insurance</h1>
+				<h1 className="center"> Thank You! One of our agents will be calling you shortly. Please have your phone ready.</h1>
 				<br></br>
+				<p> 
+					If now isn't a good time to talk to an Agent about getting the best price on insrance for your business, you can call us at <a href="tel+18553361823"><b>(855) 336-1823</b> </a>at your convenience. We look foward to helping you save.
+				</p>
                 <div id="target"> 
 				</div>
             </div>
