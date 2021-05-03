@@ -10,6 +10,14 @@
 
 }
 
+.logosTop {
+    width: 275px;
+}
+.h3 {
+    font-size: small;
+    color: #fff;
+}
+
 .landing-page .section-one {
     width: 100%;
     height: 400px;
@@ -187,7 +195,7 @@
 }
 
 .landing-page .service-main-image.business {
-    background-image: url("https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/602d79d329b66638f1763d05_VARIOS-07.jpg");
+    background-image: url("./Assets/bImg.jpg");
     background-size: contain;
 }
 
@@ -242,7 +250,7 @@
 }
 
 .landing-page .trusted-companies {
-    background-color: #6165ff;
+    background-color: white;
 }
 
 .landing-page .custom-rounded {

@@ -1,10 +1,12 @@
-import { Button, Card, Col, Collapse, Layout, Row } from 'antd';
+import { Button, Card, Col, Collapse, Layout, Row, Typography } from 'antd';
+import Grid from '@material-ui/core/Grid';
+
 import { PhoneOutlined } from '@ant-design/icons';
 import logo from './Assets/img/logo.png';
-import farmers from './Assets/img/farmers.png';
-import progressive from './Assets/img/progressive.png';
-import travelers from './Assets/img/travelers.png';
-import stateAuto from './Assets/img/state-auto.png';
+import SA from './Assets/sa.png';
+import CNA from './Assets/cna.png';
+import LM from './Assets/lm.png';
+import PROG from './Assets/prog.png';
 import heroImg from './Assets/img/newHero.jpg';
 import connectImg from './Assets/img/connection.png';
 import whatImg from './Assets/img/car.jpeg';
@@ -100,18 +102,18 @@ function LandingPage(props) {
 							<div className='section-two-img-container'>
 								<Row>
 									<Col xs={{ span: 24 }} lg={{ span: 12 }} className='px-md-4 py-3 '>
-										<img src={travelers} alt='logo1' />
+										<img src={SA} alt='logo1' className="logosTop" />
 									</Col>
 									<Col xs={{ span: 24 }} lg={{ span: 9, offset: 3 }} className='px-md-4 py-3 '>
-										<img src={progressive} alt='logo1' className='ml-1' />
+										<img src={CNA} alt='logo1' className="logosTop"/>
 									</Col>
 								</Row>
 								<Row>
 									<Col xs={{ span: 24 }} lg={{ span: 12 }} className='px-md-4 py-3 '>
-										<img src={stateAuto} alt='logo1' />
+										<img src={LM} alt='logo1'  className="logosTop"/>
 									</Col>
 									<Col xs={{ span: 24 }} lg={{ span: 10, offset: 2 }} className='px-md-4 py-3 '>
-										<img src={farmers} alt='logo1' />
+										<img src={PROG} alt='logo1' className="logosTop" />
 									</Col>
 								</Row>
 							</div>
@@ -354,7 +356,7 @@ function LandingPage(props) {
 							</Col>
 						</Row>
 						<Row className='mt-md-5'>
-							<Col xs={{ span: 24 }} lg={{ span: 12 }}>
+							{/* <Col xs={{ span: 24 }} lg={{ span: 12 }}>
 								<img
 									src={whatImg}
 									width='723'
@@ -363,19 +365,18 @@ function LandingPage(props) {
 									alt=''
 									className='client-image-big w-100 rounded'
 								/>
-							</Col>
-							<Col xs={{ span: 24 }} lg={{ span: 11, offset: 1 }}>
+							</Col> */}
+							{/* <Col xs={{ span: 24 }} lg={{ span: 11, offset: 1 }}> */}
 								<img src={quote} alt='quote' width='21' className='quote' />
 								<p className='quote-text-v1'>
 									<em className='font-italic italic-text-4'>
-										“I have never had such a great experience getting insurance quotes than I had using Quantum. &nbsp;Their form is super quick and simple. &nbsp;As soon as I hit submit, they matched me with a great insurance agent named Sandy. &nbsp;I had all the information
-										and quotes I had to make the decision to switch my insurance. &nbsp;Thank you Quantum for the great connection! ”<br />
+									“I have never had such a great experience getting insurance quotes than I had using Quantum Assurance.  Their form is super quick and simple.  As soon as I hit submit, they matched me with a great insurance agent named Sandy.  I had all the information and quotes I had to make the decision to switch my insurance.  Thank you Quotehound for the great connection!" <br/>
 									</em>
 								</p>
-								<p>Matthew</p>
+								
 								<Row className='mt-1'>
 									<Col span={24}>
-										<Button
+									<Button
 													onClick={() => {
 														props.changeRoute();
 														history.push('/step1');
@@ -383,53 +384,32 @@ function LandingPage(props) {
 													type='block '
 													size='large'
 													className='btn-large text-blue'>
-													Free Commercial Quote <ArrowRightOutlined />
+												Start Your Free Quote <ArrowRightOutlined />
 												</Button>
 									</Col>
 								</Row>
-							</Col>
+							{/* </Col> */}
 						</Row>
 					</section>
-					<section className='section-connect mt-5 pb-5'>
+					<section className='container mt-md-5'>
 						<Row>
-							<Col xs={{ span: 24 }} lg={{ span: 9, offset: 3 }}>
-								<img
-									src={connectImg}
-									sizes='(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 43vw, (max-width: 1279px) 40vw, 515px'
-									srcSet='https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0d8c14f1c09_developer-4027337_960_720-p-500.png 500w, https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0d8c14f1c09_developer-4027337_960_720.png 788w'
-									alt=''
-								/>
-							</Col>
-							<Col xs={{ span: 24 }} lg={{ span: 12 }}>
-								<div className='container d-flex h-75'>
+							
+							<Col xs={{ span: 24 }}>
+								<div className='container d-flex h-75 '>
 									<div className='justify-content-center align-self-center'>
 										<h2 className='mx-auto text-center '>We connect you with live rates in less than 2 minutes</h2>
-										<Row className='mt-md-5'>
-											<Col xs={{ span: 24 }}>
+										<Row className='mb-5 mt-3 '>
+											<Col xs={{ span: 24 }} lg={{ span: 16, offset: 4 }} className='text-center'>
 												<CheckOutlined style={{ color: '#008000' }} /> <p className='d-inline ml-3 text-co2'>Quick and reliable</p>
 											</Col>
-											<Col xs={{ span: 24 }}>
-												<CheckOutlined style={{ color: '#008000' }} /> <p className='d-inline ml-3 text-co2'>Quantum gives you tips!</p>
+											<Col xs={{ span: 24 }} lg={{ span: 16, offset: 4 }} className='text-center'>
+												<CheckOutlined style={{ color: '#008000' }} /> <p className='d-inline ml-3 text-co2'>Quantum Assurance gives you tips!</p>
 											</Col>
-											<Col xs={{ span: 24 }}>
+											<Col xs={{ span: 24 }} lg={{ span: 16, offset: 4 }} className='text-center'>
 												<CheckOutlined style={{ color: '#008000' }} /> <p className='d-inline ml-3 text-co2'>Secure and safe</p>
 											</Col>
-											<Col xs={{ span: 24 }}>
+											<Col xs={{ span: 24 }} lg={{ span: 16, offset: 4 }} className='text-center'>
 												<CheckOutlined style={{ color: '#008000' }} /> <p className='d-inline ml-3 text-co2'>We work with top rated companies!</p>
-											</Col>
-										</Row>
-										<Row className='mt-4'>
-											<Col span={24}>
-												<Button
-													onClick={() => {
-														props.changeRoute();
-														history.push('/step1');
-													}}
-													type='block '
-													size='large'
-													className='btn-large text-blue'>
-													Free Commercial Quote <ArrowRightOutlined />
-												</Button>
 											</Col>
 										</Row>
 									</div>
@@ -441,24 +421,24 @@ function LandingPage(props) {
 						<div className='container'>
 							<Row className='py-5'>
 								<Col span={24}>
-									<h3 className='mx-auto text-center text-white'>
+									<h3 className='mx-auto text-center'>
 										Trusted by some of leading <br />
 										companies in the world
 									</h3>
 								</Col>
 							</Row>
 							<Row>
-								<Col xs={{ span: 24 }} lg={{ span: 6 }} className='section-two-imgs '>
-									<img src={travelers} alt='logo1' className='bg-white custom-rounded py-1' />
+							<Col xs={{ span: 24 }} lg={{ span: 6 }} className='section-two-imgs '>
+									<img src={SA} alt='logo1' className=' logosTop' />
 								</Col>
 								<Col xs={{ span: 24 }} lg={{ span: 6 }} className='section-two-imgs '>
-									<img src={progressive} alt='logo1' className='ml-1 bg-white custom-rounded py-2 px-2' />
+									<img src={PROG} alt='logo1' className=' logosTop' />
 								</Col>
-								<Col xs={{ span: 24 }} lg={{ span: 6 }} className='section-two-imgs mt-md-3'>
-									<img src={stateAuto} alt='logo1' className='bg-white custom-rounded py-2 px-1' />
+								<Col xs={{ span: 24 }} lg={{ span: 6 }} className='section-two-imgs'>
+									<img src={CNA} alt='logo1' className='logosTop' />
 								</Col>
-								<Col xs={{ span: 24 }} lg={{ span: 6 }} className='section-two-imgs  mt-md-3'>
-									<img src={farmers} alt='logo1' className='bg-white custom-rounded py-2 px-1' />
+								<Col xs={{ span: 24 }} lg={{ span: 6 }} className='section-two-imgs'>
+									<img src={LM} alt='logo1' className=' logosTop' />
 								</Col>
 							</Row>
 						</div>
@@ -467,9 +447,60 @@ function LandingPage(props) {
 				<Footer className='footer'>
 					<div className='footer-container'>
 						<div className='footer-top-wrap-2'>
-							<h1 className='heading-16'>Quantum Assurance International</h1>
+							<h1 className='heading-16'>Quantum Assurance</h1>
 						</div>
-						<div className='div-block-58'></div>
+						<div className='div-block-58'>
+						<h3 className="h3">powered by Quantum Assurance Inc 2021  </h3>
+
+						
+						<Grid container xs={12} align='center' style={{ justifyContent: 'center' }}>
+		
+					<Grid container xs={10} style={{ paddingBottom: '1rem', marginTop: '1rem' }}>
+						<Grid container lg={5} xs={12}>
+							<Grid item lg={4} xs={12} style={{ alignSelf: 'center', marginTop: '1rem' }}>
+								<Typography
+									style={{
+										fontSize: '15px',
+										color: 'rgb(166, 166, 166)',
+										fontWeight: 600,
+									}}>
+									<a
+										href='https://quantumassurance.com/'
+										// @ts-ignore
+										style={{ color: 'rgb(166,166,166)', fontWeight: '400' }}>
+										Visit Us
+									</a>
+								</Typography>
+							</Grid>
+							<Grid item lg={4} xs={12} style={{ alignSelf: 'center', marginTop: '1rem' }}>
+								<Typography style={{ fontSize: '15px', color: 'rgb(166, 166, 166)' }}>
+									<a
+										href='https://quantumassurance.com/privacy-policy'
+										// @ts-ignore
+										style={{ color: 'rgb(166,166,166)', fontWeight: '400' }}>
+										Privacy Policy
+									</a>
+								</Typography>
+							</Grid>
+							<Grid item lg={4} xs={12} style={{ alignSelf: 'center', marginTop: '1rem' }}>
+								<Typography
+									style={{
+										fontSize: '15px',
+										color: 'rgb(166, 166, 166)',
+										fontWeight: 600,
+									}}>
+									<a
+										href='https://quantumassurance.com/terms-conditions'
+										// @ts-ignore
+										style={{ color: 'rgb(166,166,166)', fontWeight: '400' }}>
+										Terms & Conditions
+									</a>
+								</Typography>
+							</Grid>
+						</Grid>
+					</Grid>
+				</Grid>
+						</div>
 					</div>
 				</Footer>
 			</Layout>
