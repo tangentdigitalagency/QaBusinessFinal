@@ -81,6 +81,7 @@ class S2EmailAndPhoneNumber extends Component {
 									maxLength='14'
 									size='large'
 									placeholder='1234567890'
+									id='phoneNumber'
 								/>
 							</Form.Item>
 							<h5>Email</h5>
