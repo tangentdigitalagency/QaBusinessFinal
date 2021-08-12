@@ -28,8 +28,6 @@ class S9Final extends Component {
                 <div id="target"> 
 				</div>
 
-				<div className="g3cm_holder" data-module data-showoninit="true" data-calloninit="false" data-conversionid data-destination data-destinationext data-followup style={{display: 'none'}}>Thank you for your inquiry. A representative will be in contact with you shortly.</div>
-
             </div>
 		);
 	}

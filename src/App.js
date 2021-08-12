@@ -71,6 +71,16 @@ class App extends Component {
 		},
 	};
 
+	// connectMe = () => {
+
+	// 	var  phone = this.state.postData.phone_home;
+		
+	// 	this.setState({
+	// 		dataLayer : { 'moduleid': '1618', 'phonenumber': phone, 'destinationphonenumber': '', 'conversionid': '' }
+	// 	})
+
+	// }
+
 	copyValuesToPostData2 = () => {
 		var tempArray = {
 			email: this.state.postData.email_address,

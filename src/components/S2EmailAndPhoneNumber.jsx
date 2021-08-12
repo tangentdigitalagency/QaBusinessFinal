@@ -8,9 +8,19 @@ class S2EmailAndPhoneNumber extends Component {
 	state = {};
 
 	onFinish = (values) => {
+
 		this.simplePhone(values.phone_home);
 		this.props.setBusinessEmail(values.email_address);
 		console.log('Success:', values);
+
+		console.log('phone init')
+
+		let phone = document.getElementById('phoneNumber').value;
+
+		window.dataLayer = [{ 'moduleid': '1618', 'phonenumber': phone , 'destinationphonenumber': '', 'conversionid': '' }];
+
+		console.log('phone passed ' + phone)
+
 		this.props.history.push('/step3');
 		// this.props.nextStep();
 	};
