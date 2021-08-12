@@ -24,14 +24,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet" />
 		
 		<link rel="dns-prefetch" href="https://api.connectstreams.com" />
-<script>
-
-
-var phoneNumber = document.getElementById("phoneNumber").value;
-
-	dataLayer = [{ 'moduleid': '1618', 'phonenumber': phoneNumber, 'destinationphonenumber': '', 'conversionid': '' }];
-
-	</script>
 		
 		<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -161,13 +153,15 @@ var phoneNumber = document.getElementById("phoneNumber").value;
 
 <input type="hidden" id="gclid_field" name="gclid_field" value="">
 
-<script type="text/javascript">
-	window.g3cm = window.g3cm || function () { (g3cm.q = g3cm.q || []).push(arguments) };
-	g3cm('loadjquery', 'true');
-	g3cm('phonenumberinput', 'phoneNumber'); 
-	g3cm('send', 'init');
-	</script>
-	<script src="https://api.connectstreams.com/js/connectme-v3.min.js" async="async"></script>
+		
+		
+<script>
+
+var phoneNumber = document.getElementById("phoneNumber").value;
+
+dataLayer = [{ 'moduleid': '1618', 'phonenumber': phoneNumber, 'destinationphonenumber': '', 'conversionid': '' }];
+
+</script>
 	
 
 </body>
