@@ -22,6 +22,17 @@
 		<title>React App</title>
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet" />
+		
+		<link rel="dns-prefetch" href="https://api.connectstreams.com" />
+<script>
+
+
+var phoneNumber = document.getElementById("phoneNumber").value;
+
+	dataLayer = [{ 'moduleid': '1618', 'phonenumber': phoneNumber, 'destinationphonenumber': '', 'conversionid': '' }];
+
+	</script>
+		
 		<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -48,18 +59,7 @@
 
 
 
-<link rel="dns-prefetch" href="https://api.connectstreams.com" />
-<script>
 
-
-var phoneNumber = document.getElementById("phoneNumber").value;
-
-	dataLayer = [{ 'moduleid': '', 'phonenumber': phoneNumber, 'destinationphonenumber': '', 'conversionid': '' }];
-
-	console.log(phoneNumber)
-	console.log(dataLayer['phonenumber']);
-	
-	</script>
 		
 </head>
 
