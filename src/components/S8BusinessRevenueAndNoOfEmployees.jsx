@@ -144,7 +144,7 @@ class S8BusinessRevenueAndNoOfEmployees extends Component {
                     </Form.Item>
                     {/* <Link to="step9"> */}
                     <Form.Item>
-                      <Button type="primary" htmlType="submit" block size="large" className="finalSubmit" id="finalSubmit">
+                      <Button type="primary" htmlType="submit" block size="large" className={"finalSubmit"}id="finalSubmit">
                         Get My Quote
                       </Button>
                     </Form.Item>
