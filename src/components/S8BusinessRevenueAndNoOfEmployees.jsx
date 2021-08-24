@@ -95,7 +95,7 @@ class S8BusinessRevenueAndNoOfEmployees extends Component {
                     }}
                     onFinishFailed={this.onFinishFailed}
                   >
-                    <h3>One more thing...</h3>
+                    <h3>One more thing</h3>
                     <br />
                     <h5>What Is Your Annual Revenue Over The Next 12 Months</h5>
                     <Form.Item
