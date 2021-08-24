@@ -144,9 +144,29 @@ class S8BusinessRevenueAndNoOfEmployees extends Component {
                     </Form.Item>
                     {/* <Link to="step9"> */}
                     <Form.Item>
-                      <Button type="primary" htmlType="submit" block size="large" className={"finalSubmit"}id="finalSubmit">
-                        Get My Quote
-                      </Button>
+                    <Button
+                            type="primary"
+                            htmlType="submit"
+                            style={{ width: "100%" }}
+                            size={"large"}
+                            className={"finalSubmit"}
+                            id={"finalSubmit"}
+                          >
+                            <h4
+                              style={{
+                                display: "inline",
+                                color: "white",
+                                fontWeight: "400",
+                              }}
+                            >
+                              Complete
+                        </h4>
+                        &nbsp;&nbsp;&nbsp;
+                        <i
+                              className="fa fa-arrow-right"
+                              style={{ fontSize: "24px" }}
+                            ></i>
+                          </Button>
                     </Form.Item>
                     {/* </Link> */}
                   </Form>
